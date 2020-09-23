@@ -72,6 +72,24 @@ _WARNING_: Some functionality may not be available with Qt version less than 5.5
 
 then follow "How to compile" block.
 
+### Debian
+
+Builded on Debian 10 with Qt 5.12.9.
+[Qt webkit](https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#debian--ubuntu):
+
+    sudo apt-get update
+    sudo apt-get install g++ qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
+
+[Qt multimedia](https://stackoverflow.com/questions/26948466/project-error-unknown-modules-in-qt-multimedia):
+
+    sudo apt-get install qtmultimedia5-dev libqt5multimediawidgets5 libqt5multimedia5-plugins libqt5multimedia5
+   
+[Qt qml qtquick](https://github.com/webcamoid/webcamoid/issues/40):
+
+    sudo apt-get install qml-module-qtquick-dialogs qml-module-qtquick-controls
+    
+then follow "How to compile" block.
+
 ### Arch
 
 Install yasem from [AUR](https://aur4.archlinux.org/packages/yasem-git):
